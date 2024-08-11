@@ -16,7 +16,7 @@ AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
 
 
---2 top paying roles - what are the skills for 10 top paying data jobs in Poland?
+--2 A top paying roles - what are the skills for 10 top paying data jobs in Poland?
 
 WITH top_paying_jobs AS ( 
     SELECT
@@ -43,7 +43,7 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC
 
---3 top paying roles - what are the skills for top 10 paying Data Analyst roles in Poland?
+--2 B top paying roles - what are the skills for top 10 paying Data Analyst roles in Poland?
 
 WITH top_paying_jobs AS (
     SELECT
@@ -71,7 +71,7 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC
     
---4 top demanded skills in Poland regardless of data job position (all roles)
+--3A top demanded skills in Poland regardless of data job position (all roles)
 
 SELECT 
     skills,
@@ -85,7 +85,7 @@ GROUP BY skills
 ORDER BY demand_count DESC
 LIMIT 10
 
---5 top demanded skills for Data Analyst position in Poland
+--3B top demanded skills for Data Analyst position in Poland
 SELECT 
     skills,
     COUNT(skills_job_dim.job_id) AS demand_count
@@ -97,7 +97,7 @@ GROUP BY skills
 ORDER BY demand_count DESC
 LIMIT 10
 
---6 the most optimal skills to learn to get high paying data job (regardless of specific position) in Poland?
+--4 the most optimal skills to learn to get high paying data job (regardless of specific position) in Poland?
 
 WITH skills_demand as (
     SELECT 
@@ -139,7 +139,7 @@ ORDER BY
     
 LIMIT 25
 
---7 Skills by country - data for worldmap vis
+--5 Skills by country - data for worldmap vis
 
 --TOP 3 MOST DEMANDED SKILLS PER COUNTRY
 
