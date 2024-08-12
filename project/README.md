@@ -449,17 +449,13 @@ What's more, I found out how to use VS Code and how to write a good README for m
 
 # Conclusions
 
-In the Polish data job market:
+Overall, the most commonly required skill in the job market for any data role is timeless SQL, crucial for data management and querying. Excel remains fundamental for data analysts, used for reporting, and financial modeling. Python is highly demanded for data science, machine learning, automation, and data analysis, and is versatile across various fields. The strong demand for data visualization and business intelligence supporting data-driven decisions makes Tableau and Power BI other top-demanded skills to have on your resume.
 
-**Top Earning Skills:** Tableau offers the highest average salary (PLN 131,687), making it the most lucrative skill.
+Taking fincancial aspect into account, skills like Python and Tableau offer a strong combination of demand and salary. Although SQL is the keystone of data analysis, it is so common and classic that it doesn't result in a high paycheck. Traditional tools like Excel remain relevant, while modern tools like and cloud platforms are growing in importance. Spark and Hadoop provide strong salaries and are valuable skills as well. BigQuery and GCP offer good salaries (PLN 108,056 and PLN 100,837) with moderate demand.
+Scala and Windows, while less in demand, offer respectable salaries.
 
-**High Demand & Salary:** Python and SQL are in high demand and offer competitive salaries (PLN 119,526 and PLN 118,758, respectively).
-
-**Solid Options:** Spark and Hadoop provide strong salaries (PLN 112,729 and PLN 111,046) and are valuable skills.
-
-**Emerging Technologies:** BigQuery and GCP offer good salaries (PLN 108,056 and PLN 100,837) with moderate demand.
-
-**Niche Areas:** Scala and Windows, while less in demand, offer respectable salaries.
+In the Polish data job market Tableau offers the highest average salary (PLN 131,687), making it the most lucrative skill.
+Python and  SQL are in high demand and offer competitive salaries (PLN 119,526 and PLN 118,758, respectively).
 
 For data analysts specifically, SQL and Python are the most optimal skills, offering a strong balance of high demand and good salaries. Tableau and Excel are also valuable, with Tableau commanding a higher salary despite fewer job postings. Focusing on SQL and Python will maximize both job opportunities and earning potential in this field.
 
