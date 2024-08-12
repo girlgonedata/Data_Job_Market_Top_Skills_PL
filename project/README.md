@@ -8,7 +8,7 @@ The research results are split into:
 A) for all data-related professions in Poland
 B) narrowed down to the Data Analyst profession I aspire to.
 
-Data source: [Luke Barousse SQL Course](https://www.lukebarousse.com/sql)
+Data source and guidance: [Luke Barousse SQL Course](https://www.lukebarousse.com/sql)
 
 ### **Questions I wanted to answer through this project:**
 **1. What are the top-paying data jobs in Poland?**
