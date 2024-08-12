@@ -14,3 +14,4 @@ LEFT JOIN company_dim ON company_dim.company_id = job_postings_fact.company_id
 WHERE job_location = 'Poland'
 AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
+LIMIT 20
