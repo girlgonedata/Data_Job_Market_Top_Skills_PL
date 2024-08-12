@@ -65,7 +65,7 @@ WHERE job_location = 'Poland'
 AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
 ```
-
+![Chart genereted in Python](chart_1a.png)
 **Top Salaries:**
 The highest-paying role is "Head of Data Platform and Cloud" at Palta with 221,000 PLN annually.
 Roles like "Corporate Audit, AVP – Full Stack Data Scientist" and "Machine Learning Engineer" offer salaries around 186,000 PLN.
