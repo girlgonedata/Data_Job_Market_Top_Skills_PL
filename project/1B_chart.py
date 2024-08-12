@@ -1,5 +1,9 @@
-data=
-[
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Data for the visualization
+data = [
+
   {
     "job_id": 369283,
     "job_title": "Data Analyst (Delivery Experience Technology & Product)",
@@ -100,3 +104,25 @@ data=
     "company_name": "Westinghouse Electric Company"
   }
 ]
+
+# Convert data to a DataFrame
+df = pd.DataFrame(data)
+
+# Sort by salary
+df = df.sort_values(by="salary_year_avg", ascending=False)
+
+# Create the bar plot
+plt.figure(figsize=(10, 8))
+bars = plt.barh(df['job_title'], df['salary_year_avg'], color='skyblue')
+
+# Add company name labels to each bar
+for bar, company in zip(bars, df['company_name']):
+    plt.text(bar.get_width(), bar.get_y() + bar.get_height()/2, f' {company}', va='center', ha='left')
+
+# Add titles and labels
+plt.xlabel('Average Yearly Salary (PLN)')
+plt.ylabel('Job Title')
+plt.title('Top 20 Highest-Paying Data Analyst in Poland (2023)')
+
+# Show the plot
+plt.show()
