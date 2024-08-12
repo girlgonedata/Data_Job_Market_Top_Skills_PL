@@ -66,8 +66,6 @@ AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
 ```
 
-### Key Insights on Highest-Paying Data Jobs in Poland:
-
 **Top Salaries:**
 The highest-paying role is "Head of Data Platform and Cloud" at Palta with 221,000 PLN annually.
 Roles like "Corporate Audit, AVP – Full Stack Data Scientist" and "Machine Learning Engineer" offer salaries around 186,000 PLN.
@@ -104,7 +102,6 @@ AND job_title_short = 'Data Analyst'
 AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
 ```
-The provided data highlights the top-paying job offers for data analysts in Poland in 2023. Key insights include:
 
 **Top Salaries:** The highest-paying data analyst positions offer a yearly salary of around PLN 111,175, with multiple roles at Allegro leading this category.
 
@@ -146,7 +143,6 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC
 ```
-**Key Skills for High-Paying Data Job Positions**
 
 **Cloud Platforms:**
 AWS, Azure, and GCP are crucial for top-paying roles, reflecting the importance of cloud expertise.
@@ -192,7 +188,6 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC
 ```
-**Key Skills for High-Paying Data Analyst Positions**
 
 **SQL:** SQL is the most frequently mentioned skill across high-paying data analyst job offers. It is a core skill for querying and managing databases, reflecting its critical role in data analysis tasks.
 
