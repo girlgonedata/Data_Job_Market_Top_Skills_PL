@@ -61,19 +61,20 @@ df = pd.DataFrame(data)
 # Count the frequency of each skill
 skill_counts = df['skills'].value_counts()
 
-# Set up the matplotlib figure
+# Convert to DataFrame for easier plotting
+df = pd.DataFrame(skill_counts.items(), columns=['Skill', 'Frequency'])
+df = df.sort_values(by='Frequency', ascending=False)
+
+# Plotting
 plt.figure(figsize=(12, 8))
+sns.barplot(x='Frequency', y='Skill', data=df, palette='cubehelix')
 
-# Create a bar plot
-sns.barplot(x=skill_counts.index, y=skill_counts.values, palette="cubehelix")
+# Title and labels
+plt.title('Skills Required for Top-Paying Data Analyst Jobs in Poland', fontsize=16)
+plt.xlabel('Frequency', fontsize=14)
+plt.ylabel('Skill', fontsize=14)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
 
-# Add labels and title
-plt.xlabel('Skills')
-plt.ylabel('Frequency')
-plt.title('Top Skills Required for Top-Paying Data Analyst Jobs in Poland')
-
-# Rotate x labels for better readability
-plt.xticks(rotation=45, ha='right')
-
-# Display the plot
+# Show plot
 plt.show()
