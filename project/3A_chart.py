@@ -1,3 +1,5 @@
+#chart3a
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -15,10 +17,10 @@ df = pd.DataFrame(data)
 plt.figure(figsize=(12, 8))
 
 # Create a bar plot
-sns.barplot(x='demand_count', y='skills', data=df, palette='viridis')
+sns.barplot(x='demand_count', y='skills', data=df, palette='cubehelix')
 
 # Add titles and labels
-plt.title('Most Demanded Data Skills in Poland Job Market', fontsize=16)
+plt.title('Most In-Demand Data Skills in the Polish Data Job Market', fontsize=16)
 plt.xlabel('Demand Count', fontsize=14)
 plt.ylabel('Skills', fontsize=14)
 
