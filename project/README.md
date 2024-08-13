@@ -66,20 +66,12 @@ AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
 ```
 ![Chart genereted in Python](chart_1a.png)
-**Top Salaries:**
+
 The highest-paying role is "Head of Data Platform and Cloud" at Palta with 221,000 PLN annually.
 Roles like "Corporate Audit, AVP – Full Stack Data Scientist" and "Machine Learning Engineer" offer salaries around 186,000 PLN.
-
-**High Demand for ML & AI Skills:**
 Roles such as Machine Learning Engineer and AI Engineer are among the top-paying jobs, reflecting the strong demand for expertise in these areas.
-
-**Major Employers:**
 Allegro is a key player with multiple high-paying roles, indicating its significant investment in data talent. Other notable employers include HEINEKEN and Warner Bros. Discovery.
-
-**Salary Range:**
 Yearly salaries in the dataset range from 132,500 PLN to 221,000 PLN, with a focus on roles in data engineering, machine learning, and AI.
-
-**Part-Time Opportunity:**
 Even part-time roles, like "Big Data / AI Engineer" at Warner Bros. Discovery, offer competitive salaries (164,500 PLN), highlighting the value of specialized skills.
 
 This data suggests that leadership roles in data management, as well as specialized positions in machine learning, AI, and data engineering, are the most lucrative in Poland’s data job market. Companies like Allegro, HEINEKEN, and Warner Bros. Discovery are leading employers, and there is a clear trend toward high-paying opportunities in both full-time and part-time positions, particularly in roles that demand advanced technical skills.
@@ -104,15 +96,11 @@ ORDER BY salary_year_avg DESC
 ```
 ![Chart genereted in Python](chart_1b.png)
 
-**Top Salaries:** The highest-paying data analyst positions offer a yearly salary of around PLN 111,175, with multiple roles at Allegro leading this category.
-
-**Dominance of Allegro:** Allegro is the dominant employer, offering the majority of the top-paying roles, especially for senior positions.
-
-**Salary Range:** The salaries for data analyst positions range from PLN 111,175 at the high end to PLN 43,200 at the low end, indicating a significant disparity based on experience, specialization, and the company.
-
-**Junior Roles:** The lowest salaries are associated with junior roles, such as HR Data Analyst and Junior Data Analyst, indicating the entry-level pay scale within this field.
-
-**Industry Focus:** The data suggests a strong presence of data analyst roles in e-commerce (Allegro) and technology (Capco, Westinghouse Electric Company), with a focus on specialized areas like finance and pricing.
+The highest-paying data analyst positions offer a yearly salary of around PLN 111,175, with multiple roles at Allegro leading this category.
+Allegro is the dominant employer, offering the majority of the top-paying roles, especially for senior positions.
+The salaries for data analyst positions range from PLN 111,175 at the high end to PLN 43,200 at the low end, indicating a significant disparity based on experience, specialization, and the company.
+The lowest salaries are associated with junior roles, such as HR Data Analyst and Junior Data Analyst, indicating the entry-level pay scale within this field.
+The data suggests a strong presence of data analyst roles in e-commerce (Allegro) and technology (Capco, Westinghouse Electric Company), with a focus on specialized areas like finance and pricing.
 
 ### 2. Skills for Top Paying Jobs
 To identify the skills needed for the highest-paying jobs, I joined job postings with skills data, revealing what employers prioritize for well-compensated positions.
