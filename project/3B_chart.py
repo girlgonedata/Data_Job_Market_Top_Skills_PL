@@ -1,3 +1,4 @@
+#chart3b
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -22,12 +23,12 @@ df = pd.DataFrame(data)
 
 # Create the bar plot
 plt.figure(figsize=(12, 8))
-sns.barplot(x='demand_count', y='skills', data=df, palette='viridis')
+sns.barplot(x='demand_count', y='skills', data=df, palette='cubehelix')
 
 # Add titles and labels
-plt.title('Most In-Demand Skills for Data Analysts in Poland')
-plt.xlabel('Number of Job Postings')
-plt.ylabel('Skills')
+plt.title('Most In-Demand Skills for Data Analysts in Poland', fontsize=18)
+plt.xlabel('Number of Job Postings', fontsize=14)
+plt.ylabel('Skills', fontsize=14)
 
 # Show the plot
 plt.tight_layout()
