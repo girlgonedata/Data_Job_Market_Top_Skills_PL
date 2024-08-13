@@ -64,7 +64,7 @@ WHERE job_location = 'Poland'
 AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
 ```
-![Chart genereted in Python](project/chart_1a.png)
+![Chart genereted in Python](chart_1a.png)
 
 The highest-paying role is "Head of Data Platform and Cloud" at Palta with 221,000 PLN annually.
 Roles like "Corporate Audit, AVP – Full Stack Data Scientist" and "Machine Learning Engineer" offer salaries around 186,000 PLN.
@@ -93,7 +93,7 @@ AND job_title_short = 'Data Analyst'
 AND salary_year_avg IS NOT NULL
 ORDER BY salary_year_avg DESC
 ```
-![Chart genereted in Python](project/chart_1b.png)
+![Chart genereted in Python](chart_1b.png)
 
 The highest-paying data analyst positions offer a yearly salary of around PLN 111,175, with multiple roles at Allegro leading this category.
 Allegro is the dominant employer, offering the majority of the top-paying roles, especially for senior positions.
@@ -131,7 +131,7 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC
 ```
-![Chart genereted in Python](project/chart_2a.png)
+![Chart genereted in Python](chart_2a.png)
 
 **Cloud Platforms:**
 AWS, Azure, and GCP are crucial for top-paying roles, reflecting the importance of cloud expertise.
@@ -178,7 +178,7 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC
 ```
-![Chart genereted in Python](project/chart_2b.png)
+![Chart genereted in Python](chart_2b.png)
 
 **SQL:** SQL is the most frequently mentioned skill across high-paying data analyst job offers. It is a core skill for querying and managing databases, reflecting its critical role in data analysis tasks.
 
@@ -205,7 +205,7 @@ GROUP BY skills
 ORDER BY demand_count DESC
 LIMIT 10
 ```
-![Chart genereted in Python](project/chart_3a.png)
+![Chart genereted in Python](chart_3a.png)
 
 In the Polish data job market, SQL and Python are the most sought-after skills, each with exceptionally high demand. SQL leads with 7,500 mentions, highlighting its essential role in data management and querying. Python follows closely with 7,295 mentions, reflecting its widespread use in data analysis and scripting.
 
@@ -230,7 +230,7 @@ GROUP BY skills
 ORDER BY demand_count DESC
 LIMIT 10
 ```
-![Chart genereted in Python](project/chart_3b.png)
+![Chart genereted in Python](chart_3b.png)
 
 The demand for data analyst skills in Poland is led by SQL, Python, and Excel, which are highly sought after across job postings.
 
@@ -260,7 +260,7 @@ GROUP BY skills_dim.skills
 ORDER BY avg_salary DESC
 LIMIT 25
 ```
-![Chart genereted in Python](project/chart_4a.png)
+![Chart genereted in Python](chart_4a.png)
 
 **Top Salaries:**
 Databricks offers the highest average salary (178,732 PLN), followed by Snowflake (162,335 PLN) and Azure (158,099 PLN).
@@ -296,7 +296,7 @@ AND job_title_short = 'Data Analyst'
 GROUP BY skills_dim.skills
 ORDER BY avg_salary DESC
 ```
-![Chart genereted in Python](project/chart_4b.png)
+![Chart genereted in Python](chart_4b.png)
 
 **Highest Salaries:**
 BigQuery and Airflow are the top-paid skills, both with an average salary of PLN 111,175.
@@ -359,7 +359,7 @@ ORDER BY
     demand_count DESC
     
 ```
-![Chart genereted in Python](project/chart_5a.png)
+![Chart genereted in Python](chart_5a.png)
 
 **High Earning Potential:** Tableau stands out with the highest average salary at PLN 131,687, making it the top skill for high earning potential.
 
@@ -414,7 +414,7 @@ ORDER BY
     demand_count DESC
     
 ```
-![Chart genereted in Python](project/chart_5b.png)
+![Chart genereted in Python](chart_5b.png)
 
 SQL and Python are the most optimal skills, showing high demand and competitive salaries. SQL leads in demand count, while Python offers a higher salary.
 Tableau and Excel are valuable but slightly less lucrative. Tableau, despite having fewer job postings, commands a higher salary compared to Excel.
