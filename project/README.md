@@ -1,7 +1,6 @@
 # **Skills in the Data Job Market in Poland**
 # Introduction
-Let's embark on an exploration of the data job market. In this project, I delve into job postings from 2023 to uncover valuable insights into top-paying roles, in-demand skills, and where high demand meets high salaries in data analytics within the Polish job market.
-
+Let's embark on an exploration of the data job market. In this project, I delve into job postings from 2023 to uncover valuable insights into top-paying roles, in-demand skills, and where high demand meets high salaries in data job market in Poland.
 # Background
 Entering the data job market, especially after a career change, can be challenging. What are hiring companies looking for? Which skills should I prioritize learning? What are the top-paid skills? To better navigate the data job market, this project analyzes job postings to identify crucial details such as salaries and skills. 
 The research results are split into:
@@ -69,7 +68,7 @@ ORDER BY salary_year_avg DESC
 
 The highest-paying role is "Head of Data Platform and Cloud" at Palta with 221,000 PLN annually.
 Roles like "Corporate Audit, AVP – Full Stack Data Scientist" and "Machine Learning Engineer" offer salaries around 186,000 PLN.
-Roles such as Machine Learning Engineer and AI Engineer are among the top-paying jobs, reflecting the strong demand for expertise in these areas.
+Machine Learning Engineer and AI Engineer job positions are among the top-paying jobs, reflecting the strong demand for expertise in these areas.
 Allegro is a key player with multiple high-paying roles, indicating its significant investment in data talent. Other notable employers include HEINEKEN and Warner Bros. Discovery.
 Yearly salaries in the dataset range from 132,500 PLN to 221,000 PLN, with a focus on roles in data engineering, machine learning, and AI.
 Even part-time roles, like "Big Data / AI Engineer" at Warner Bros. Discovery, offer competitive salaries (164,500 PLN), highlighting the value of specialized skills.
@@ -148,6 +147,7 @@ Python and SQL are consistently required across various positions, highlighting 
 
 **Emerging Technologies:**
 Familiarity with Terraform and Airflow is increasingly sought after, indicating a trend towards newer tools and technologies.
+
 In summary, cloud expertise, advanced data processing, and strong programming skills, along with experience in emerging tools, are key to securing high-paying data positions in Poland.
 
 **Data Analysts:**
@@ -182,9 +182,9 @@ ORDER BY
 
 **SQL:** SQL is the most frequently mentioned skill across high-paying data analyst job offers. It is a core skill for querying and managing databases, reflecting its critical role in data analysis tasks.
 
-**Python:** Python is another highly sought-after skill, emphasizing its importance in data manipulation, analysis, and automation. Its popularity is driven by its versatility and the wide range of data science libraries it supports.
-
 **GCP (Google Cloud Platform):** GCP appears consistently in job requirements, indicating a strong preference for experience with cloud platforms. This suggests that cloud computing and data storage in a scalable environment are essential for these roles.
+
+**Python:** Python is another highly sought-after skill, emphasizing its importance in data manipulation, analysis, and automation. Its popularity is driven by its versatility and the wide range of data science libraries it supports.
 
 **Tableau and Looker:** Both Tableau and Looker are mentioned frequently, highlighting the importance of data visualization tools in these positions. Proficiency in these tools is crucial for presenting data insights effectively.
 
@@ -237,7 +237,6 @@ The demand for data analyst skills in Poland is led by SQL, Python, and Excel, w
 SQL stands out as the most demanded skill with 131 mentions, reflecting its essential role in querying and managing databases.
 Python follows with 85 mentions, highlighting its importance for data manipulation, analysis, and automation tasks.
 Excel is also in high demand, with 73 mentions, indicating its continued relevance for data handling and basic analysis.
-
 Other skills such as Tableau (56 mentions) and Power BI (46 mentions) are important for data visualization but are less frequently mentioned compared to SQL, Python, and Excel. Skills like GCP (36 mentions) and R (28 mentions) are also valuable but show a more niche demand. Windows, Looker, and Azure have lower demand counts, suggesting they are less critical compared to the top skills but still relevant in specific contexts.
 
 This distribution underscores the broad reliance on SQL and Python for core data analysis tasks, while also emphasizing the importance of visualization tools and cloud platforms in the job market.
@@ -317,7 +316,7 @@ SAP, PowerPoint, and GDPR are among the lower-paying skills, with salaries rangi
 Overall, specialized skills in data management and analysis, such as BigQuery and Airflow, significantly boost earning potential for data analysts in Poland.
 
 ### 5. The Most Optimal Skills to Learn
-Let's merge insights on the most sought-after and highest-paying skills to identify which ones offer job security (high demand) and financial benefits (high salaries), providing strategic insights for career development in data analysis.
+Let's merge insights on the most sought-after and highest-paying skills to identify which ones offer job security (high demand) and financial benefits (high salaries), providing strategic insights for career development in data industry.
 
 **All data jobs:**
 ```sql
@@ -437,15 +436,11 @@ What's more, I found out how to use VS Code and how to write a good README for m
 
 # Conclusions
 
-Overall, the most commonly required skill in the job market for any data role is timeless SQL, crucial for data management and querying. Excel remains fundamental for data analysts, used for reporting, and financial modeling. Python is highly demanded for data science, machine learning, automation, and data analysis, and is versatile across various fields. The strong demand for data visualization and business intelligence supporting data-driven decisions makes Tableau and Power BI other top-demanded skills to have on your resume.
+Overall, the most commonly required skill in the job market for any data role is SQL, a timeless tool crucial for data management and querying. Excel, used for reporting and financial modeling, remains fundamental for data analysts, but it doesn’t come with a high salary, as it’s an obvious must-have. Python is highly demanded for data science, machine learning, automation, and data analysis, and is versatile across various fields. The strong demand for data visualization and business intelligence to support data-driven decisions makes Tableau and Power BI other top-demanded skills to have on your resume.
 
-Taking fincancial aspect into account, skills like Python and Tableau offer a strong combination of demand and salary. Although SQL is the keystone of data analysis, it is so common and classic that it doesn't result in a high paycheck. Traditional tools like Excel remain relevant, while modern tools like and cloud platforms are growing in importance. Spark and Hadoop provide strong salaries and are valuable skills as well. BigQuery and GCP offer good salaries (PLN 108,056 and PLN 100,837) with moderate demand.
-Scala and Windows, while less in demand, offer respectable salaries.
+Taking the financial aspect into account, BigQuery and Airflow are the highest-paid skills for Data Analysts, but Python and Tableau offer a secure combination of demand and salary. Although SQL is the cornerstone of data analysis, it is so common and classic that it doesn’t result in a high paycheck. Traditional tools like Excel remain relevant, while modern tools like cloud platforms are growing in importance and deserve every data-newbie's attention. Snowflake, Azure, and AWS are financially rewarding, while GCP offers good salaries with moderate demand. Spark and Hadoop also provide strong salaries and are valuable skills as well. However, regardless of the data job role, Databricks remains the top-paid skill in the market.
 
-In the Polish data job market Tableau offers the highest average salary (PLN 131,687), making it the most lucrative skill.
-Python and  SQL are in high demand and offer competitive salaries (PLN 119,526 and PLN 118,758, respectively).
-
-For data analysts specifically, SQL and Python are the most optimal skills, offering a strong balance of high demand and good salaries. Tableau and Excel are also valuable, with Tableau commanding a higher salary despite fewer job postings. Focusing on SQL and Python will maximize both job opportunities and earning potential in this field.
+SQL, Python, and Tableau or Power BI are the most optimal skills to learn for aspiring Data Analysts, offering a strong balance of high demand and good salaries. Tableau commands a higher salary despite fewer job postings compared to skills like SQL and Excel. Focusing on SQL, Python and a data visualisation tool of choice may maximize both job opportunities and earning potential in this field. Considering any other data job role, cloud platforms are growing both in demand and in pay. It’s a great time to develop competencies in this field if you haven’t done so already!
 
 
 ### Closing Thoughts
