@@ -1,4 +1,4 @@
-# **Skills in the Data Job Market in Poland**
+# **Data Skills Analysis in Poland**
 # Introduction
 Let's embark on an exploration of the data job market. In this project, I delve into job postings from 2023 to uncover valuable insights into top-paying roles, in-demand skills, and where high demand meets high salaries in data job market in Poland.
 # Background
@@ -38,7 +38,7 @@ To dive into the data analyst job market, I navigated the currents using several
 - PostgreSQL
 - VS Code
 - GitHub
-- Pandas and Matplotlib for visualisation in Python
+- Python for visualisation
 
 # The Analysis
 
