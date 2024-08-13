@@ -3,106 +3,26 @@ import pandas as pd
 
 # Data for the visualization
 data = [
-
-  {
-    "job_id": 369283,
-    "job_title": "Data Analyst (Delivery Experience Technology & Product)",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "111175.0",
-    "job_posted_date": "2023-07-07 09:28:39",
-    "company_name": "Allegro"
-  },
-  {
-    "job_id": 876513,
-    "job_title": "Data Analyst - Financial Services",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "111175.0",
-    "job_posted_date": "2023-01-28 12:19:26",
-    "company_name": "Allegro"
-  },
-  {
-    "job_id": 367763,
-    "job_title": "Data Analyst",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "111175.0",
-    "job_posted_date": "2023-09-05 04:19:21",
-    "company_name": "Allegro"
-  },
-  {
-    "job_id": 1240464,
-    "job_title": "Data Analyst",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "102500.0",
-    "job_posted_date": "2023-01-31 12:15:58",
-    "company_name": "Capco"
-  },
-  {
-    "job_id": 1281562,
-    "job_title": "Data Analyst (CX Tech)",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "102500.0",
-    "job_posted_date": "2023-03-25 11:43:15",
-    "company_name": "Allegro"
-  },
-  {
-    "job_id": 470832,
-    "job_title": "SAP Finance Data Analyst",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "77017.5",
-    "job_posted_date": "2023-12-16 21:11:19",
-    "company_name": "Westinghouse Electric Company"
-  },
-  {
-    "job_id": 189127,
-    "job_title": "Junior Data Analyst (Campaign Team)",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "75067.5",
-    "job_posted_date": "2023-12-22 03:10:55",
-    "company_name": "Allegro"
-  },
-  {
-    "job_id": 705215,
-    "job_title": "Data Analyst (Pricing)",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "57500.0",
-    "job_posted_date": "2023-06-27 20:47:14",
-    "company_name": "Allegro"
-  },
-  {
-    "job_id": 67765,
-    "job_title": "Junior/Mid/Senior Data Analyst (Pricing)",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "53014.0",
-    "job_posted_date": "2023-02-27 21:09:30",
-    "company_name": "Allegro"
-  },
-  {
-    "job_id": 282943,
-    "job_title": "Junior Data Analyst - e-Xperience 2023",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "53014.0",
-    "job_posted_date": "2023-04-18 10:46:01",
-    "company_name": "Allegro"
-  },
-  {
-    "job_id": 12599,
-    "job_title": "HR Data Analyst",
-    "job_location": "Poland",
-    "job_schedule_type": "Full-time",
-    "salary_year_avg": "43200.0",
-    "job_posted_date": "2023-12-16 13:11:25",
-    "company_name": "Westinghouse Electric Company"
-  }
+    {"job_title": "Head of Data Platform and Cloud", "salary_year_avg": 221000.0, "company_name": "Palta"},
+    {"job_title": "Corporate Audit, AVP – Full Stack Data Scientist", "salary_year_avg": 186928.0, "company_name": "State Street"},
+    {"job_title": "Machine Learning Engineer", "salary_year_avg": 186000.0, "company_name": "HEINEKEN"},
+    {"job_title": "Senior ML Engineer", "salary_year_avg": 185500.0, "company_name": "Exadel"},
+    {"job_title": "Senior Machine Learning Engineer", "salary_year_avg": 166000.0, "company_name": "SmartRecruiters Inc"},
+    {"job_title": "Big Data / AI Engineer", "salary_year_avg": 164500.0, "company_name": "Warner Bros. Discovery"},
+    {"job_title": "Analytics Engineer", "salary_year_avg": 158500.0, "company_name": "Palta"},
+    {"job_title": "Senior Data Scientist (Search)", "salary_year_avg": 157500.0, "company_name": "Allegro"},
+    {"job_title": "Data Scientist", "salary_year_avg": 157500.0, "company_name": "Opera"},
+    {"job_title": "Data Engineer - Data&AI", "salary_year_avg": 155500.0, "company_name": "Allegro"},
+    {"job_title": "Data Engineer - Data Science Hub", "salary_year_avg": 155500.0, "company_name": "Allegro"},
+    {"job_title": "Azure Open AI Engineer", "salary_year_avg": 154750.0, "company_name": "Accenture"},
+    {"job_title": "Data Engineer - Delivery Experience", "salary_year_avg": 147500.0, "company_name": "Allegro"},
+    {"job_title": "Data Engineer", "salary_year_avg": 146000.0, "company_name": "HEINEKEN"},
+    {"job_title": "Data Engineer (Python, Hadoop)", "salary_year_avg": 133500.0, "company_name": "Capco"},
+    {"job_title": "Data Engineer (Hadoop)", "salary_year_avg": 133500.0, "company_name": "Capco"},
+    {"job_title": "Data Engineer (Data Science Hub)", "salary_year_avg": 133500.0, "company_name": "Allegro"},
+    {"job_title": "Data Engineer (Data Science Hub)", "salary_year_avg": 133000.0, "company_name": "Allegro"},
+    {"job_title": "Data Scientist (S&OP)", "salary_year_avg": 132500.0, "company_name": "Allegro"},
+    {"job_title": "Data Scientist (Data Science Hub)", "salary_year_avg": 132500.0, "company_name": "Allegro"}
 ]
 
 # Convert data to a DataFrame
@@ -122,7 +42,10 @@ for bar, company in zip(bars, df['company_name']):
 # Add titles and labels
 plt.xlabel('Average Yearly Salary (PLN)')
 plt.ylabel('Job Title')
-plt.title('Top 20 Highest-Paying Data Analyst in Poland (2023)')
+plt.title('Top 20 Highest-Paying Data Jobs in Poland (2023)')
+
+# Invert the y-axis to have the highest salary at the top
+plt.gca().invert_yaxis()
 
 # Show the plot
 plt.show()
