@@ -1,39 +1,35 @@
+#chart4b
+
 import matplotlib.pyplot as plt
-import pandas as pd
 
 # Data
-data = [
-    {"skills": "bigquery", "avg_salary": 111175},
-    {"skills": "airflow", "avg_salary": 111175},
-    {"skills": "tableau", "avg_salary": 109006},
-    {"skills": "windows", "avg_salary": 108283},
-    {"skills": "spark", "avg_salary": 102500},
-    {"skills": "flow", "avg_salary": 102500},
-    {"skills": "git", "avg_salary": 102500},
-    {"skills": "hadoop", "avg_salary": 102500},
-    {"skills": "scikit-learn", "avg_salary": 102500},
-    {"skills": "looker", "avg_salary": 99979},
-    {"skills": "python", "avg_salary": 96073},
-    {"skills": "sql", "avg_salary": 86347},
-    {"skills": "gcp", "avg_salary": 80492},
-    {"skills": "pyspark", "avg_salary": 77757},
-    {"skills": "excel", "avg_salary": 74239},
-    {"skills": "sap", "avg_salary": 60109},
-    {"skills": "powerpoint", "avg_salary": 60109},
-    {"skills": "gdpr", "avg_salary": 43200}
+skills = [
+    "bigquery", "airflow", "tableau", "windows", "spark", "flow", "git", "hadoop", 
+    "scikit-learn", "looker", "python", "sql", "gcp", "pyspark", "excel", "sap", 
+    "powerpoint", "gdpr"
+]
+avg_salaries = [
+    111175, 111175, 109006, 108283, 102500, 102500, 102500, 102500, 102500, 
+    99979, 96073, 86347, 80492, 77757, 74239, 60109, 60109, 43200
 ]
 
-# Convert to DataFrame
-df = pd.DataFrame(data)
+# Create the bar chart
+plt.figure(figsize=(14, 8))
 
-# Plot
-plt.figure(figsize=(12, 8))
-plt.barh(df['skills'], df['avg_salary'], color='skyblue')
-plt.xlabel('Average Salary (PLN)')
-plt.title('Average Salary by Skill for Data Analysts in Poland')
-plt.gca().invert_yaxis()  # Invert y-axis to have the highest salaries on top
-plt.grid(axis='x', linestyle='--', alpha=0.7)
+# Create a white-to-red gradient color scheme
+norm = plt.Normalize(min(avg_salaries), max(avg_salaries))
+colors = plt.cm.Reds(norm(avg_salaries))
 
-# Show plot
+bars = plt.barh(skills, avg_salaries, color=colors)
+plt.xlabel('Average Yearly Salary (PLN)', fontsize=14)
+plt.title('Top-Paying Skills for Data Analysts in Poland', fontsize=18)
+plt.gca().invert_yaxis()  # Highest salary at the top
+
+# Adding value labels on the bars
+for bar in bars:
+    plt.text(bar.get_width() + 2000, bar.get_y() + bar.get_height()/2,
+             f'{bar.get_width():,.0f}', va='center')
+
 plt.tight_layout()
 plt.show()
+
