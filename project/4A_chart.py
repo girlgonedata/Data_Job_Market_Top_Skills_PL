@@ -18,7 +18,12 @@ avg_salaries = [
 # Create the bar chart
 plt.figure(figsize=(14, 8))
 
-bars = plt.barh(skills, avg_salaries, color='skyblue')
+# Create a white-to-red gradient color scheme
+norm = plt.Normalize(min(avg_salaries), max(avg_salaries))
+colors = plt.cm.Reds(norm(avg_salaries))
+
+bars = plt.barh(skills, avg_salaries, color=colors)
+
 plt.xlabel('Average Yearly Salary (PLN)', fontsize=14)
 plt.title('Top Paying Data Job Skills in Poland', fontsize=18)
 plt.gca().invert_yaxis()  # Highest salary at the top
