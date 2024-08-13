@@ -1,3 +1,5 @@
+#chart2a
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -27,10 +29,10 @@ df = df.sort_values(by='Frequency', ascending=False)
 
 # Plotting
 plt.figure(figsize=(12, 8))
-sns.barplot(x='Frequency', y='Skill', data=df, palette='viridis')
+sns.barplot(x='Frequency', y='Skill', data=df, palette='cubehelix')
 
 # Title and labels
-plt.title('Frequency of Skills Required in High-Paying Data Jobs in Poland', fontsize=16)
+plt.title('Top Skills Required for High-Paying Data Jobs in Poland', fontsize=16)
 plt.xlabel('Frequency', fontsize=14)
 plt.ylabel('Skill', fontsize=14)
 plt.xticks(fontsize=12)
