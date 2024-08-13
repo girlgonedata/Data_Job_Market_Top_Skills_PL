@@ -1,6 +1,9 @@
+#chart2b
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+
 
 # Sample data
 data = [
@@ -51,6 +54,7 @@ data = [
     {"job_id": 282943, "job_title": "Junior Data Analyst - e-Xperience 2023", "salary_year_avg": 53014.0, "skills": "pyspark"}
 ]
 
+
 # Create a DataFrame
 df = pd.DataFrame(data)
 
@@ -61,12 +65,12 @@ skill_counts = df['skills'].value_counts()
 plt.figure(figsize=(12, 8))
 
 # Create a bar plot
-sns.barplot(x=skill_counts.index, y=skill_counts.values, palette="viridis")
+sns.barplot(x=skill_counts.index, y=skill_counts.values, palette="cubehelix")
 
 # Add labels and title
 plt.xlabel('Skills')
 plt.ylabel('Frequency')
-plt.title('Frequency of Skills Required for Top-Paying Data Analyst Jobs in Poland')
+plt.title('Top Skills Required for Top-Paying Data Analyst Jobs in Poland')
 
 # Rotate x labels for better readability
 plt.xticks(rotation=45, ha='right')
