@@ -1,3 +1,5 @@
+#chart4a
+
 import matplotlib.pyplot as plt
 
 # Data
@@ -15,9 +17,10 @@ avg_salaries = [
 
 # Create the bar chart
 plt.figure(figsize=(14, 8))
+
 bars = plt.barh(skills, avg_salaries, color='skyblue')
-plt.xlabel('Average Yearly Salary (PLN)')
-plt.title('Average Yearly Salary for Data Skills in Poland')
+plt.xlabel('Average Yearly Salary (PLN)', fontsize=14)
+plt.title('Top Paying Data Job Skills in Poland', fontsize=18)
 plt.gca().invert_yaxis()  # Highest salary at the top
 
 # Adding value labels on the bars
